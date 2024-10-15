@@ -1,128 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-         <loc>https://futureshit.github.io/</loc>
-         <lastmod>2023-09-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://futureshit.github.io/articles/call/</loc>
-         <lastmod>2023-09-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://futureshit.github.io/articles/nudging/</loc>
-         <lastmod>2023-09-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://futureshit.github.io/articles/riseup/</loc>
-         <lastmod>2023-09-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://futureshit.github.io/links/events/</loc>
-         <lastmod>2023-09-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://futureshit.github.io/links/howto/</loc>
-         <lastmod>2023-09-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://futureshit.github.io/links/inis/</loc>
-         <lastmod>2023-09-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://futureshit.github.io/links/leaks/</loc>
-         <lastmod>2023-09-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://futureshit.github.io/links/maps/</loc>
-         <lastmod>2023-09-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://futureshit.github.io/links/misc/</loc>
-         <lastmod>2023-09-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://futureshit.github.io/links/opsec/</loc>
-         <lastmod>2023-09-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://futureshit.github.io/links/osint/</loc>
-         <lastmod>2023-09-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://futureshit.github.io/links/provider/</loc>
-         <lastmod>2023-09-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://futureshit.github.io/links/tests/</loc>
-         <lastmod>2023-09-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://futureshit.github.io/links/tools/</loc>
-         <lastmod>2023-09-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://futureshit.github.io/media/blogs/</loc>
-         <lastmod>2023-09-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://futureshit.github.io/media/books/</loc>
-         <lastmod>2023-09-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://futureshit.github.io/media/docus/</loc>
-         <lastmod>2023-09-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://futureshit.github.io/media/fiction/</loc>
-         <lastmod>2023-09-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://futureshit.github.io/media/talks/</loc>
-         <lastmod>2023-09-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://futureshit.github.io/privacy/android/</loc>
-         <lastmod>2023-09-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://futureshit.github.io/privacy/comsurv/</loc>
-         <lastmod>2023-09-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://futureshit.github.io/privacy/falsesec/</loc>
-         <lastmod>2023-09-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://futureshit.github.io/privacy/resist/</loc>
-         <lastmod>2023-09-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://futureshit.github.io/privacy/services/</loc>
-         <lastmod>2023-09-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>/aufruf/riseup/</loc>
+<lastmod>2017-11-23T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>/aufruf/call/</loc>
+<lastmod>2018-03-23T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>/anleitung/passwords/</loc>
+<lastmod>2024-04-04T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>/anleitung/adblock/</loc>
+<lastmod>2024-05-03T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>/anleitung/dns/</loc>
+<lastmod>2024-05-05T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>/anleitung/browser/</loc>
+<lastmod>2024-06-06T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>/about/</loc>
+</url>
+<url>
+<loc>/android/</loc>
+</url>
+<url>
+<loc>/blogs/</loc>
+</url>
+<url>
+<loc>/books/</loc>
+</url>
+<url>
+<loc>/categories/</loc>
+</url>
+<url>
+<loc>/comsurv/</loc>
+</url>
+<url>
+<loc>/docus/</loc>
+</url>
+<url>
+<loc>/events/</loc>
+</url>
+<url>
+<loc>/falsesec/</loc>
+</url>
+<url>
+<loc>/fiction/</loc>
+</url>
+<url>
+<loc>/howto/</loc>
+</url>
+<url>
+<loc>/</loc>
+</url>
+<url>
+<loc>/inis/</loc>
+</url>
+<url>
+<loc>/leaks/</loc>
+</url>
+<url>
+<loc>/maps/</loc>
+</url>
+<url>
+<loc>/misc/</loc>
+</url>
+<url>
+<loc>/opsec/</loc>
+</url>
+<url>
+<loc>/optout/</loc>
+</url>
+<url>
+<loc>/osint/</loc>
+</url>
+<url>
+<loc>/provider/</loc>
+</url>
+<url>
+<loc>/services/</loc>
+</url>
+<url>
+<loc>/talks/</loc>
+</url>
+<url>
+<loc>/tests/</loc>
+</url>
+<url>
+<loc>/tools/</loc>
+</url>
 </urlset>

@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-10-16T00:00:15+02:00</updated><id>/feed.xml</id><title type="html">Futureshit.</title><author><name>Your Name</name></author><entry><title type="html">Browser</title><link href="/anleitung/browser/" rel="alternate" type="text/html" title="Browser" /><published>2024-06-06T00:00:00+02:00</published><updated>2024-06-06T00:00:00+02:00</updated><id>/anleitung/browser</id><content type="html" xml:base="/anleitung/browser/"><![CDATA[<h1 id="browser-best-practice">Browser Best Practice</h1>
+
+<h2 id="anmerkung-zur-wahl-des-browsers">Anmerkung zur Wahl des Browsers</h2>
+
+<ul>
+  <li>Chrome ist mit Abstand der schnellste Browser, aber auch der am meißten “nach Hause” telefonierende</li>
+  <li>Chrome bzw. Google arbeitet stark mit der Werbeindustrie zusammen &amp; versucht Adblocker auszubremsen</li>
+  <li>Edge basiert auf Chrome aber statt zu Google telefoniert er halt zu Microsoft</li>
+  <li>Firefox war eigentlich immer eine gute Alternative, bis sich 2024 auch dafür entschieden wurde Tracking-Daten für die Werbeindustrie standartmäßig zu sammeln</li>
+  <li>um Opera (mit seinem eingebauten VPN) sollte man einen ganz großen Bogen machen, da werden ebenfalls massiv Daten der Nutzer*innen gesammelt</li>
+  <li>es gibt einige Chrome Alternativen die ebenfalls auf Chrome aufbauen, schnell sind und ein Augenmerk auf Privatsphäre haben (zB. Vivaldi)</li>
+  <li>Tor Browser oder der von Mullwad haben eingebaute Anonymisierung und können ein Höchstmaß an Sicherheit bieten durch vorkonfigurierte Einstellungen</li>
+  <li>auf Mobilgeräten werden die Einstellungen nicht so umfangreich sein, allerdings sind dort ebenfalls die grundlegen hier genannten Einstellungen vorhanden</li>
+</ul>
+
+<h2 id="einstellungen">Einstellungen</h2>
+
+<p>Die Einstellungen ergeben sich aus der bestmöglichen Praxis zum Schutz privater Daten.</p>
+
+<h3 id="tldr">TL:DR</h3>
+
+<p>Prinzipiell kann alles “unnötige” deaktiviert werden, außer die Einstellungen die tatsächlich zur Sicherheit beitragen (DNS, Browserdaten löschen, Drittanbietercookies blockieren, HTTPS immer an).</p>
+
+<h3 id="übergreifend">Übergreifend</h3>
+
+<ul>
+  <li>Kein Login in Browser Profilen mit Email-Adressen/Microsoft-Profilen
+    <ul>
+      <li>Daten werden über Server der Hersteller syncronisiert</li>
+    </ul>
+  </li>
+  <li>Autofill (Passwörter, Zahlungsinformationen, Adressen &amp; ggf. weitere persönliche Informationen) deaktivieren
+    <ul>
+      <li>Daten werden im Browser gespeichert und können einfach ausgelesen werden (zB. auf bösartigen Websiten oder durch Malware)</li>
+    </ul>
+  </li>
+  <li>Drittanbietercookies deaktivieren
+    <ul>
+      <li>Drittanbieter sind meißt Werbeunternehmen die euch tracken wollen</li>
+    </ul>
+  </li>
+  <li>Beim Schließen des Browsers Daten löschen aktivieren</li>
+  <li>“Do not track”-Anforderungen senden, kann aktiviert werden
+    <ul>
+      <li>es kann aber sein das diese Einstellungen einen quasi “verraten” und Websiten einen dann extra tracken</li>
+    </ul>
+  </li>
+  <li>Rechtschreibprüfung deaktivieren
+    <ul>
+      <li>durch die Prüfung wird der eingegebene Text analysiert</li>
+    </ul>
+  </li>
+  <li>im Hintergrund ausführen wenn Browser geschlossen ist deaktivieren
+    <ul>
+      <li>warum sollte irgendwas noch laufen wenn ich den Browser nicht mehr nutze?</li>
+    </ul>
+  </li>
+  <li>Warnen, wenn ein Passwort durch eine Datenpanne gehackt wurde (oder ähnlich formuliert) deaktivieren
+    <ul>
+      <li>gleich das Passwort mit einer Datenbank ab</li>
+    </ul>
+  </li>
+  <li>Safe Browsing deaktivieren
+    <ul>
+      <li>Safe Browsing verspricht zwar Schutz kann aber auch als Mittel der Zensur genutzt werden</li>
+    </ul>
+  </li>
+  <li>Immer verschlüsselte Verbindungen verwenden aktivieren
+    <ul>
+      <li>eine der wichtigsten Einstellungen damit man immer verschlüsselt auf Websiten kommuniziert</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="website--bzw-inhalts-einstellungen">Website- bzw. Inhalts-Einstellungen</h4>
+
+<p>Der Browser kann beim Besuch auf einer Website viele Daten an den dahinterliegenden Server und seine Trackingsysteme weiterleiten, um diese Daten möglichst gering zu halten sollte man sich durch die lange Liste mit Inhaltseinstellungen quälen und eigentlich alles deaktivieren.</p>
+
+<p>So oder so ähnlich heißen die Einstellungen in den Browsern unter der Kategorie “Websiteeinstellungen” bzw. “Inhaltseinstellungen”:</p>
+
+<ul>
+  <li>Standortzugriff deaktivieren</li>
+  <li>Kamera deaktivieren (auf Nachfragen ändern, wenn du Onlinemeetings nutzt)</li>
+  <li>Mikrofon deaktivieren (auf Nachfragen ändern, wenn du Onlinemeetings nutzt)</li>
+  <li>Benachrichtigungen deaktivieren</li>
+  <li>eingebettete Inhalte deaktivieren</li>
+  <li>Hintergrundsyncronisierung (kann deaktiviert werden)</li>
+  <li>Sensoren deaktivieren</li>
+  <li>Auto-Downloads deaktivieren</li>
+  <li>Protokoll-Handler (kann missbraucht werden, kann aber auch nützlich für eigene Workflows sein, zB. Email öffnen oder Kalender)</li>
+  <li>Midi: auf Nachfrage, wenn du mit Midi-Geräten arbeitest, ansonsten deaktivieren</li>
+  <li>USB: auf Nachfrage, wenn du mit USB-Geräten arbeitest, ansonsten deaktivieren</li>
+  <li>Serielle Schnittstelle: auf Nachfrage, wenn du mit der Schnittstelle arbeitest, ansonsten deaktivieren</li>
+  <li>Dateien bearbeiten deaktivieren</li>
+  <li>HID-Geräte deaktivieren</li>
+  <li>Zwischenablage deaktivieren</li>
+  <li>Zahlungs-Handler deaktivieren</li>
+  <li>Augmented Reality deaktivieren</li>
+  <li>Gerätenutzung deaktivieren</li>
+  <li>Fensterverwaltung deaktivieren</li>
+  <li>Schriftarten deaktivieren</li>
+  <li>JavaScript, kann deaktiviert werden, wenn man weißt was man tut, für mehr Kontrolle noscript Extension nutzen, ansonsten aktiviert lassen</li>
+  <li>Bilder, kann deaktiviert werden, wenn man nicht will das irgendwelche Bilder auf Websiten geladen werden, ansonsten aktiviert lassen</li>
+  <li>Pop-Up´s &amp; Weiterleitungen deaktivieren</li>
+  <li>Aufdringliche Inhalte deaktivieren</li>
+  <li>PDF´s im Browser öffnen deaktivieren</li>
+  <li>Geschützte Inhalts-IDs deaktivieren</li>
+  <li>Automatische Bestätigung deaktivieren</li>
+  <li>Websitedaten auf dem Gerät deaktivieren</li>
+</ul>
+
+<h3 id="spezifisch">Spezifisch</h3>
+
+<p>Die Reihenfolge der genannten Einstellungen entsprechen der Reihenfolge in den Einstellungsmenüs (top to bottom).</p>
+
+<h4 id="edge">Edge</h4>
+
+<h5 id="profile"><a href="edge://settings/profiles">Profile</a></h5>
+
+<ul>
+  <li>Verdienen Sie Microsoft Rewards in Microsoft Edge: deaktivieren</li>
+  <li>Automatische Anmeldung bei Microsoft Edge: deaktivieren</li>
+  <li>Einmaliges Anmelden für Arbeits- oder Schulwebsites mit diesem Profil zulassen: deaktivieren</li>
+  <li>Browsing-Daten mit anderen Windows-Features gemeinsam nutzen: deaktivieren</li>
+  <li>Zahlungsinformationen speichern und einfügen: deaktivieren</li>
+  <li>Express-Checkout auf Websites beim Einkaufen anzeigen: deaktivieren</li>
+  <li>Nachverfolgen des Bestellstatus: deaktivieren</li>
+  <li>Speichern von Kennwörtern anbieten: deaktivieren</li>
+  <li>Anzeigen und automatisches Ausfüllen von Kennwörtern und Hauptschlüsseln: deaktivieren</li>
+  <li>Nach kompromittierten Kennwörtern suchen: deaktivieren</li>
+  <li>Grundlegende Informationen ausfüllen und speichern: deaktivieren</li>
+</ul>
+
+<h5 id="datenschutz-suche--dienste"><a href="edge://settings/privacy">Datenschutz, Suche &amp; Dienste</a></h5>
+
+<ul>
+  <li>Tracking-Verhinderung kann auf “Streng” geschalten werden</li>
+  <li>Beim InPrivate-Browsen immer die strenge Tracking-Verhinderung nutzen: aktivieren</li>
+  <li>Wählen Sie aus, was beim Schließen des Browsers gelöscht werden soll: alle Optionen aktivieren</li>
+  <li>„Nicht verfolgen“-Anforderungen (Do not track) senden: optional</li>
+  <li>Zulassen, dass Websites überprüfen, ob Sie Zahlungsmethoden gespeichert haben: deaktivieren</li>
+  <li>Optionale Diagnosedaten: deaktivieren</li>
+  <li>Personalisierung &amp; Werbung: deaktivieren</li>
+  <li>Microsoft Defender SmartScreen: kann aktiviert werden, sofern man Microsoft vertraut einschätzen zu können was “schädliche” Websites &amp; Downloads sind</li>
+  <li>Potenziell unerwünschte Apps blockieren: kann aktiviert werden, sofern man Microsoft vertraut einschätzen zu können was “unerwünschte” Apps sind</li>
+  <li>Website-Tippfehlerschutz: deaktivieren</li>
+  <li>Sicheres DNS: kann aktiviert werden siehe “sonstige Empfehlungen”</li>
+  <li>Verbessern Sie Ihre Sicherheit im Web: deaktiveren</li>
+  <li>Webdienst zum Beheben von Navigationsfehlern verwenden: deaktivieren</li>
+  <li>Ähnliche Websites vorschlagen, wenn eine Website nicht gefunden wird: deaktivieren</li>
+  <li>Sparen Sie Zeit und Geld mit Shopping in Microsoft Edge: deaktivieren</li>
+  <li>Erhalten Sie Benachrichtigungen über ähnliche Dinge, die Sie mit Discover erkunden können: deaktivieren</li>
+  <li>Lassen Sie Microsoft Edge bei der Organisation Ihrer Registerkarten helfen: deaktivieren</li>
+  <li>Adressleiste und Suche
+    <ul>
+      <li>Suchvorschläge und Filter
+        <ul>
+          <li>Such- und Websitevorschläge mit den eingegebenen Zeichen anzeigen: deaktivieren</li>
+          <li>Vorschläge aus Verlauf, Favoriten und anderen Daten auf diesem Gerät unter Verwendung meiner eingegebenen Zeichen anzeigen: deaktivieren</li>
+          <li>Suchfilter: deaktivieren</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Screenshots von Websites für den Verlauf speichern: deaktivieren</li>
+</ul>
+
+<h5 id="randleiste"><a href="edge://settings/sidebar">Randleiste</a></h5>
+
+<ul>
+  <li>Personalisieren meiner Top-Websites in der benutzerdefinierten Seitenleiste: deaktivieren</li>
+  <li>Seitenleisten-Apps erlauben, Benachrichtigungen anzuzeigen: deaktivieren</li>
+  <li>Copilot: alles deaktiveren</li>
+</ul>
+
+<h5 id="cookies--websiteberechtigungen"><a href="edge://settings/content">Cookies &amp; Websiteberechtigungen</a></h5>
+
+<ul>
+  <li>Zulassen, dass Websites Cookiedaten speichern und lesen (empfohlen): beim Deaktivieren kann es sein das bestimmte Websiten nicht mehr richtig funktionieren</li>
+  <li>Cookies von Drittanbietern blockieren: aktivieren</li>
+  <li>Seiten für schnelleres Browsen und Suchen im Voraus laden: deaktivieren</li>
+  <li>Websiteberechtigungen: siehe oben “Website- bzw. Inhalts-Einstellungen”</li>
+</ul>
+
+<h5 id="downloads"><a href="edge://settings/downloads">Downloads</a></h5>
+
+<ul>
+  <li>Office-Dateien im Browser öffnen: deaktivieren</li>
+</ul>
+
+<h5 id="sprachen"><a href="edge://settings/languages">Sprachen</a></h5>
+
+<ul>
+  <li>Anbieten, Seiten zu übersetzen, die in keiner von mir gelesenen Sprache verfügbar sind: deaktivieren</li>
+  <li>Arbeiten Sie beim Schreiben im Web mit Copilot zusammen: deaktivieren</li>
+  <li>Textvorhersage verwenden: deaktivieren</li>
+  <li>Grammatik- und Rechtschreibprüfungsunterstützung aktivieren: deaktivieren</li>
+  <li>Zusätzliche Betriebssystemregion freigeben: nie</li>
+</ul>
+
+<h5 id="system--leistung"><a href="edge://settings/system">System &amp; Leistung</a></h5>
+
+<ul>
+  <li>Startup-Boost: deaktivieren</li>
+  <li>Hintergrund-Erweiterungen und -Apps weiter ausführen, wenn Microsoft Edge geschlossen wurde: deaktivieren</li>
+  <li>Grafikbeschleunigung verwenden, wenn verfügbar: sollte aktiviert bleiben, sonst gehen manche Onlinevideos nicht sauber</li>
+  <li>Leistung optimieren: deaktivieren</li>
+  <li>Ihr PC-Spielerlebnis mit dem Effizienzmodus verbessern: deaktivieren</li>
+</ul>
+
+<h4 id="firefox">Firefox</h4>
+
+<h5 id="allgemein"><a href="about:preferences#general">Allgemein</a></h5>
+
+<ul>
+  <li>Rechtschreibung während der Eingabe überprüfen: deaktivieren</li>
+  <li>PDF nicht mit Browser öffnen</li>
+  <li>Automatische Updates installieren: deaktivieren - Benachrichtigen reicht aus</li>
+  <li>Erweiterungen während des Surfens empfehlen</li>
+  <li>Funktionen während des Surfens empfehlen</li>
+  <li>Netzwerkeinstellungen: siehe DNS-Einstellungen unter “Empfehlungen”</li>
+</ul>
+
+<h5 id="startseite"><a href="about:preferences#home">Startseite</a></h5>
+
+<ul>
+  <li>Verknüpfungen: deaktivieren</li>
+  <li>Empfohlene Geschichten: deaktivieren</li>
+  <li>Neuste Aktivität: deaktivieren</li>
+</ul>
+
+<h5 id="suche"><a href="about:preferences#search">Suche</a></h5>
+
+<ul>
+  <li>Beliebte Suchvorschläge anzeigen: deaktivieren</li>
+</ul>
+
+<h5 id="datenschutz--sicherheit"><a href="about:preferences#privacy">Datenschutz &amp; Sicherheit</a></h5>
+
+<ul>
+  <li>Verbesserter Schutz vor Aktivitätenverfolgung
+    <ul>
+      <li>Benutzerdefiniert: alles aktivieren (Cookies: Alle seitenübergreifenden Cookies)</li>
+    </ul>
+  </li>
+  <li>Websites anweisen, meine Daten nicht zu verkaufen oder weiterzugeben: aktivieren</li>
+  <li>Websites eine “Do Not Track”-Anfrage senden: kann aktiviert werden, siehe oben</li>
+  <li>Cookies und Website-Daten beim Beenden von Firefox löschen: aktivieren</li>
+  <li>Passwörter: alles deaktivieren</li>
+  <li>Automatisch ausfüllen: deaktivieren</li>
+  <li>Chronik: Benutzerdefiniert anlegen
+    <ul>
+      <li>Besuchte Seiten und Download-Chronik speichern: kann gespeichert werden</li>
+      <li>Eingegebene Suchbegriffe und Formulardaten speichern: deaktivieren</li>
+      <li>Die Chronik löschen, wenn Firefox geschlossen wird: aktivieren (alles)</li>
+    </ul>
+  </li>
+  <li>Berechtigungen: siehe oben “Website- bzw. Inhalts-Einstellungen”</li>
+  <li>Firefox erlauben, Daten zu technischen Details und Interaktionen an Mozilla zu senden: deaktivieren</li>
+  <li>Firefox das Installieren und Durchführen von Studien erlauben: deaktivieren</li>
+  <li>Websites erlauben, datenschutzfreundliche Werbe-Messungen durchzuführen: deaktivieren</li>
+  <li>Schutz vor betrügerischen Inhalten und gefährlicher Software: kann aktiviert bleiben, sofern Mozilla vertraut wird richtig einschätzen zu können ob etwas “gefährlich” ist oder nicht</li>
+  <li>Nur-HTTPS-Modus in allen Fenstern aktivieren: aktivieren</li>
+  <li>DNS über HTTPS aktivieren mit maximalem Schutz: aktivieren &amp; Anbieter wählen siehe “Empfehlungen”</li>
+</ul>
+
+<h4 id="chrome">Chrome</h4>
+
+<h5 id="syncronisieren-und-google-dienste"><a href="chrome://settings/syncSetup">Syncronisieren und Google-Dienste</a></h5>
+
+<ul>
+  <li>hier sind alle Einstellungen zu deaktivieren</li>
+</ul>
+
+<h5 id="autofill-und-passwörter"><a href="chrome://settings/autofill">Autofill und Passwörter</a></h5>
+
+<ul>
+  <li>Google Passwortmanager
+    <ul>
+      <li>Einstellungen
+        <ul>
+          <li>Speichern von Passwörtern und Passkeys anbieten: deaktivieren</li>
+          <li>Automatisch anmelden: deaktivieren</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Zahlungsmethoden: alles deaktivieren</li>
+  <li>Adressen und andere Daten: deaktivieren</li>
+</ul>
+
+<h5 id="datenschutz-und-sicherheit"><a href="chrome://settings/privacy">Datenschutz und Sicherheit</a></h5>
+
+<ul>
+  <li>Drittanbieter-Cookies blockieren</li>
+  <li>Ähnliche Websites dürfen meine Aktivitäten in der Gruppe sehen: deaktivieren</li>
+  <li>Bei Browserzugriffen eine „Do Not Track“-Anforderung mitsenden: optional (siehe oben “Übergreifend”)</li>
+  <li>Datenschutz bei Anzeigen
+    <ul>
+      <li>Werbethemen: deaktivieren</li>
+      <li>Von Websites vorgeschlagene Werbung: deaktivieren</li>
+      <li>Erfolgsmessung bei Anzeigen: deaktivieren</li>
+    </ul>
+  </li>
+  <li>Sicherheit
+    <ul>
+      <li>Safe Browsing: kann aktiviert werden, sofern man Google vertraut richtig einschätzen zu können was “gefährlich” ist</li>
+      <li>Immer verschlüsselte Verbindungen verwenden: aktivieren</li>
+      <li>Sicheres DNS verwenden: aktivieren</li>
+    </ul>
+  </li>
+  <li>Website-Einstellungen: siehe oben “Website- bzw. Inhalts-Einstellungen”</li>
+</ul>
+
+<h5 id="leistung"><a href="chrome://settings/performance">Leistung</a></h5>
+<ul>
+  <li>Seiten vorab laden: deaktivieren</li>
+</ul>
+
+<h5 id="sprachen-1"><a href="chrome://settings/languages">Sprachen</a></h5>
+
+<ul>
+  <li>Bei der Eingabe von Text auf Webseiten nach Tippfehlern suchen: deaktivieren</li>
+  <li>Google Übersetzer verwenden: deaktivieren</li>
+</ul>
+
+<h5 id="systemchromesettingssystem">[System](chrome://settings/system</h5>
+<p>)</p>
+<ul>
+  <li>Apps im Hintergrund ausführen, wenn Google Chrome geschlossen ist: deaktivieren</li>
+</ul>
+
+<h4 id="sonstige-empfehlungen">Sonstige Empfehlungen</h4>
+
+<ul>
+  <li>Suchmaschine: Qwant</li>
+  <li>Custom DNS: Quad9, OpenDNS oder dns0.eu</li>
+  <li>Adblock Extension: uBlock Origin</li>
+</ul>
+
+<h2 id="weiterführende-informationen">Weiterführende Informationen</h2>
+
+<ul>
+  <li>Browserleaks Test - was verrät dein Browser über dich: https://browserleaks.com</li>
+  <li>Adblock Test: https://d3ward.github.io/toolz/adblock</li>
+  <li>Einstellungen für das spurenarme Surfen https://privacy-handbuch.de/handbuch_21.htm</li>
+</ul>]]></content><author><name>Your Name</name></author><category term="anleitung" /><summary type="html"><![CDATA[Browser Best Practice Anmerkung zur Wahl des Browsers Chrome ist mit Abstand der schnellste Browser, aber auch der am meißten “nach Hause” telefonierende Chrome bzw. Google arbeitet stark mit der Werbeindustrie zusammen &amp; versucht Adblocker auszubremsen Edge basiert auf Chrome aber statt zu Google telefoniert er halt zu Microsoft Firefox war eigentlich immer eine gute Alternative, bis sich 2024 auch dafür entschieden wurde Tracking-Daten für die Werbeindustrie standartmäßig zu sammeln um Opera (mit seinem eingebauten VPN) sollte man einen ganz großen Bogen machen, da werden ebenfalls massiv Daten der Nutzer*innen gesammelt es gibt einige Chrome Alternativen die ebenfalls auf Chrome aufbauen, schnell sind und ein Augenmerk auf Privatsphäre haben (zB. Vivaldi) Tor Browser oder der von Mullwad haben eingebaute Anonymisierung und können ein Höchstmaß an Sicherheit bieten durch vorkonfigurierte Einstellungen auf Mobilgeräten werden die Einstellungen nicht so umfangreich sein, allerdings sind dort ebenfalls die grundlegen hier genannten Einstellungen vorhanden Einstellungen Die Einstellungen ergeben sich aus der bestmöglichen Praxis zum Schutz privater Daten. TL:DR Prinzipiell kann alles “unnötige” deaktiviert werden, außer die Einstellungen die tatsächlich zur Sicherheit beitragen (DNS, Browserdaten löschen, Drittanbietercookies blockieren, HTTPS immer an). Übergreifend Kein Login in Browser Profilen mit Email-Adressen/Microsoft-Profilen Daten werden über Server der Hersteller syncronisiert Autofill (Passwörter, Zahlungsinformationen, Adressen &amp; ggf. weitere persönliche Informationen) deaktivieren Daten werden im Browser gespeichert und können einfach ausgelesen werden (zB. auf bösartigen Websiten oder durch Malware) Drittanbietercookies deaktivieren Drittanbieter sind meißt Werbeunternehmen die euch tracken wollen Beim Schließen des Browsers Daten löschen aktivieren “Do not track”-Anforderungen senden, kann aktiviert werden es kann aber sein das diese Einstellungen einen quasi “verraten” und Websiten einen dann extra tracken Rechtschreibprüfung deaktivieren durch die Prüfung wird der eingegebene Text analysiert im Hintergrund ausführen wenn Browser geschlossen ist deaktivieren warum sollte irgendwas noch laufen wenn ich den Browser nicht mehr nutze? Warnen, wenn ein Passwort durch eine Datenpanne gehackt wurde (oder ähnlich formuliert) deaktivieren gleich das Passwort mit einer Datenbank ab Safe Browsing deaktivieren Safe Browsing verspricht zwar Schutz kann aber auch als Mittel der Zensur genutzt werden Immer verschlüsselte Verbindungen verwenden aktivieren eine der wichtigsten Einstellungen damit man immer verschlüsselt auf Websiten kommuniziert Website- bzw. Inhalts-Einstellungen Der Browser kann beim Besuch auf einer Website viele Daten an den dahinterliegenden Server und seine Trackingsysteme weiterleiten, um diese Daten möglichst gering zu halten sollte man sich durch die lange Liste mit Inhaltseinstellungen quälen und eigentlich alles deaktivieren. So oder so ähnlich heißen die Einstellungen in den Browsern unter der Kategorie “Websiteeinstellungen” bzw. “Inhaltseinstellungen”: Standortzugriff deaktivieren Kamera deaktivieren (auf Nachfragen ändern, wenn du Onlinemeetings nutzt) Mikrofon deaktivieren (auf Nachfragen ändern, wenn du Onlinemeetings nutzt) Benachrichtigungen deaktivieren eingebettete Inhalte deaktivieren Hintergrundsyncronisierung (kann deaktiviert werden) Sensoren deaktivieren Auto-Downloads deaktivieren Protokoll-Handler (kann missbraucht werden, kann aber auch nützlich für eigene Workflows sein, zB. Email öffnen oder Kalender) Midi: auf Nachfrage, wenn du mit Midi-Geräten arbeitest, ansonsten deaktivieren USB: auf Nachfrage, wenn du mit USB-Geräten arbeitest, ansonsten deaktivieren Serielle Schnittstelle: auf Nachfrage, wenn du mit der Schnittstelle arbeitest, ansonsten deaktivieren Dateien bearbeiten deaktivieren HID-Geräte deaktivieren Zwischenablage deaktivieren Zahlungs-Handler deaktivieren Augmented Reality deaktivieren Gerätenutzung deaktivieren Fensterverwaltung deaktivieren Schriftarten deaktivieren JavaScript, kann deaktiviert werden, wenn man weißt was man tut, für mehr Kontrolle noscript Extension nutzen, ansonsten aktiviert lassen Bilder, kann deaktiviert werden, wenn man nicht will das irgendwelche Bilder auf Websiten geladen werden, ansonsten aktiviert lassen Pop-Up´s &amp; Weiterleitungen deaktivieren Aufdringliche Inhalte deaktivieren PDF´s im Browser öffnen deaktivieren Geschützte Inhalts-IDs deaktivieren Automatische Bestätigung deaktivieren Websitedaten auf dem Gerät deaktivieren Spezifisch Die Reihenfolge der genannten Einstellungen entsprechen der Reihenfolge in den Einstellungsmenüs (top to bottom). Edge Profile Verdienen Sie Microsoft Rewards in Microsoft Edge: deaktivieren Automatische Anmeldung bei Microsoft Edge: deaktivieren Einmaliges Anmelden für Arbeits- oder Schulwebsites mit diesem Profil zulassen: deaktivieren Browsing-Daten mit anderen Windows-Features gemeinsam nutzen: deaktivieren Zahlungsinformationen speichern und einfügen: deaktivieren Express-Checkout auf Websites beim Einkaufen anzeigen: deaktivieren Nachverfolgen des Bestellstatus: deaktivieren Speichern von Kennwörtern anbieten: deaktivieren Anzeigen und automatisches Ausfüllen von Kennwörtern und Hauptschlüsseln: deaktivieren Nach kompromittierten Kennwörtern suchen: deaktivieren Grundlegende Informationen ausfüllen und speichern: deaktivieren Datenschutz, Suche &amp; Dienste Tracking-Verhinderung kann auf “Streng” geschalten werden Beim InPrivate-Browsen immer die strenge Tracking-Verhinderung nutzen: aktivieren Wählen Sie aus, was beim Schließen des Browsers gelöscht werden soll: alle Optionen aktivieren „Nicht verfolgen“-Anforderungen (Do not track) senden: optional Zulassen, dass Websites überprüfen, ob Sie Zahlungsmethoden gespeichert haben: deaktivieren Optionale Diagnosedaten: deaktivieren Personalisierung &amp; Werbung: deaktivieren Microsoft Defender SmartScreen: kann aktiviert werden, sofern man Microsoft vertraut einschätzen zu können was “schädliche” Websites &amp; Downloads sind Potenziell unerwünschte Apps blockieren: kann aktiviert werden, sofern man Microsoft vertraut einschätzen zu können was “unerwünschte” Apps sind Website-Tippfehlerschutz: deaktivieren Sicheres DNS: kann aktiviert werden siehe “sonstige Empfehlungen” Verbessern Sie Ihre Sicherheit im Web: deaktiveren Webdienst zum Beheben von Navigationsfehlern verwenden: deaktivieren Ähnliche Websites vorschlagen, wenn eine Website nicht gefunden wird: deaktivieren Sparen Sie Zeit und Geld mit Shopping in Microsoft Edge: deaktivieren Erhalten Sie Benachrichtigungen über ähnliche Dinge, die Sie mit Discover erkunden können: deaktivieren Lassen Sie Microsoft Edge bei der Organisation Ihrer Registerkarten helfen: deaktivieren Adressleiste und Suche Suchvorschläge und Filter Such- und Websitevorschläge mit den eingegebenen Zeichen anzeigen: deaktivieren Vorschläge aus Verlauf, Favoriten und anderen Daten auf diesem Gerät unter Verwendung meiner eingegebenen Zeichen anzeigen: deaktivieren Suchfilter: deaktivieren Screenshots von Websites für den Verlauf speichern: deaktivieren Randleiste Personalisieren meiner Top-Websites in der benutzerdefinierten Seitenleiste: deaktivieren Seitenleisten-Apps erlauben, Benachrichtigungen anzuzeigen: deaktivieren Copilot: alles deaktiveren Cookies &amp; Websiteberechtigungen Zulassen, dass Websites Cookiedaten speichern und lesen (empfohlen): beim Deaktivieren kann es sein das bestimmte Websiten nicht mehr richtig funktionieren Cookies von Drittanbietern blockieren: aktivieren Seiten für schnelleres Browsen und Suchen im Voraus laden: deaktivieren Websiteberechtigungen: siehe oben “Website- bzw. Inhalts-Einstellungen” Downloads Office-Dateien im Browser öffnen: deaktivieren Sprachen Anbieten, Seiten zu übersetzen, die in keiner von mir gelesenen Sprache verfügbar sind: deaktivieren Arbeiten Sie beim Schreiben im Web mit Copilot zusammen: deaktivieren Textvorhersage verwenden: deaktivieren Grammatik- und Rechtschreibprüfungsunterstützung aktivieren: deaktivieren Zusätzliche Betriebssystemregion freigeben: nie System &amp; Leistung Startup-Boost: deaktivieren Hintergrund-Erweiterungen und -Apps weiter ausführen, wenn Microsoft Edge geschlossen wurde: deaktivieren Grafikbeschleunigung verwenden, wenn verfügbar: sollte aktiviert bleiben, sonst gehen manche Onlinevideos nicht sauber Leistung optimieren: deaktivieren Ihr PC-Spielerlebnis mit dem Effizienzmodus verbessern: deaktivieren Firefox Allgemein Rechtschreibung während der Eingabe überprüfen: deaktivieren PDF nicht mit Browser öffnen Automatische Updates installieren: deaktivieren - Benachrichtigen reicht aus Erweiterungen während des Surfens empfehlen Funktionen während des Surfens empfehlen Netzwerkeinstellungen: siehe DNS-Einstellungen unter “Empfehlungen” Startseite Verknüpfungen: deaktivieren Empfohlene Geschichten: deaktivieren Neuste Aktivität: deaktivieren Suche Beliebte Suchvorschläge anzeigen: deaktivieren Datenschutz &amp; Sicherheit Verbesserter Schutz vor Aktivitätenverfolgung Benutzerdefiniert: alles aktivieren (Cookies: Alle seitenübergreifenden Cookies) Websites anweisen, meine Daten nicht zu verkaufen oder weiterzugeben: aktivieren Websites eine “Do Not Track”-Anfrage senden: kann aktiviert werden, siehe oben Cookies und Website-Daten beim Beenden von Firefox löschen: aktivieren Passwörter: alles deaktivieren Automatisch ausfüllen: deaktivieren Chronik: Benutzerdefiniert anlegen Besuchte Seiten und Download-Chronik speichern: kann gespeichert werden Eingegebene Suchbegriffe und Formulardaten speichern: deaktivieren Die Chronik löschen, wenn Firefox geschlossen wird: aktivieren (alles) Berechtigungen: siehe oben “Website- bzw. Inhalts-Einstellungen” Firefox erlauben, Daten zu technischen Details und Interaktionen an Mozilla zu senden: deaktivieren Firefox das Installieren und Durchführen von Studien erlauben: deaktivieren Websites erlauben, datenschutzfreundliche Werbe-Messungen durchzuführen: deaktivieren Schutz vor betrügerischen Inhalten und gefährlicher Software: kann aktiviert bleiben, sofern Mozilla vertraut wird richtig einschätzen zu können ob etwas “gefährlich” ist oder nicht Nur-HTTPS-Modus in allen Fenstern aktivieren: aktivieren DNS über HTTPS aktivieren mit maximalem Schutz: aktivieren &amp; Anbieter wählen siehe “Empfehlungen” Chrome Syncronisieren und Google-Dienste hier sind alle Einstellungen zu deaktivieren Autofill und Passwörter Google Passwortmanager Einstellungen Speichern von Passwörtern und Passkeys anbieten: deaktivieren Automatisch anmelden: deaktivieren Zahlungsmethoden: alles deaktivieren Adressen und andere Daten: deaktivieren Datenschutz und Sicherheit Drittanbieter-Cookies blockieren Ähnliche Websites dürfen meine Aktivitäten in der Gruppe sehen: deaktivieren Bei Browserzugriffen eine „Do Not Track“-Anforderung mitsenden: optional (siehe oben “Übergreifend”) Datenschutz bei Anzeigen Werbethemen: deaktivieren Von Websites vorgeschlagene Werbung: deaktivieren Erfolgsmessung bei Anzeigen: deaktivieren Sicherheit Safe Browsing: kann aktiviert werden, sofern man Google vertraut richtig einschätzen zu können was “gefährlich” ist Immer verschlüsselte Verbindungen verwenden: aktivieren Sicheres DNS verwenden: aktivieren Website-Einstellungen: siehe oben “Website- bzw. Inhalts-Einstellungen” Leistung Seiten vorab laden: deaktivieren Sprachen Bei der Eingabe von Text auf Webseiten nach Tippfehlern suchen: deaktivieren Google Übersetzer verwenden: deaktivieren [System](chrome://settings/system ) Apps im Hintergrund ausführen, wenn Google Chrome geschlossen ist: deaktivieren Sonstige Empfehlungen Suchmaschine: Qwant Custom DNS: Quad9, OpenDNS oder dns0.eu Adblock Extension: uBlock Origin Weiterführende Informationen Browserleaks Test - was verrät dein Browser über dich: https://browserleaks.com Adblock Test: https://d3ward.github.io/toolz/adblock Einstellungen für das spurenarme Surfen https://privacy-handbuch.de/handbuch_21.htm]]></summary></entry><entry><title type="html">Dns</title><link href="/anleitung/dns/" rel="alternate" type="text/html" title="Dns" /><published>2024-05-05T00:00:00+02:00</published><updated>2024-05-05T00:00:00+02:00</updated><id>/anleitung/dns</id><content type="html" xml:base="/anleitung/dns/"><![CDATA[<h1 id="sicherer-dns">Sicherer DNS</h1>
+
+<p>Wenn im Internet Adressen angefragt werden, zB. durch Ansurfen im Browser, wird der Name (instagram.com) zur der dahinter liegenden IP-Adresse eines Servers aufgelöst. Dabei werden die Anfragen zur Auflösung über idr. öffentliche Server gestellt, die die Zuordnung vornehmen. Das “Domain Name System” ist quasi wie ein Telefonbuch.</p>
+
+<p>Über DNS-Server lassen sich so auch Netzsperren verwirklichen. Einerseits können Behörden oder Internetanbieter, die einem den Heimrouter stellen, mit schwarzen Listen Jugendschutz oder Anti-Piratery durchsetzen. Anderseits kann man selber über DNS Werbung, Google, Meta, Spionage-Server, ect. wegblocken.</p>
+
+<p>Wie allen Internet Protokollen unterliegt auch das “Domain Name System” Schwachstellen die zum Ausspähen von Daten oder Manipulation genutzt werden können. Kriminelle benutzen diese zum Abziehen von Passwörtern und Kreditkartendaten, Behörden nutzen diese für Spionage und Überwachung.</p>
+
+<p>Internetanbieter leiten meißt ihre Anfragen an die öffentlichen DNS-Server von Google weiter, womit diese Anfragen natürlich der (wirtschaftlichen) Analyse des Unternehmens und potenziell auch den US-Behörden unterliegt.</p>
+
+<p>Im Heimnetz nutzen alle Geräte den Router als lokalen DNS-Server, der die Anfragen per Standart-Einstellungen an einen Server weiterleitet der dem Anbieter gehört. Auf dem Smartphone werden meißt auch per Standart die Server der Hersteller benutzt.</p>
+
+<p>Damit alle Geräte ,die im Heimnetz über den Router ins Internet kommunizieren, ihre DNS-Anfragen zB. über OpenDNS stellen muss die Adresse des OpenDNS-Servers im Router eingetragen werden. Am besten sucht man im Internet nach dem Router Modell, welches man benutzt, um die Einstellung zu finden.</p>
+
+<p>Im Smartphone kann man in den Einstellungen einfach nach “DNS” suchen und die Server eintragen.</p>
+
+<p>Falls es die Optionen zu DNSSEC, DNS-over-TLS oder DNS-over-HTTPS gibt, sollten diese auch benutzt werden. Meißt gibt es von den DNS-Anbietern weiterführende Informationen zur Benutzung der einzelnen Verfahren.</p>
+
+<p>Von speziellen Apps, die einem sicheren DNS anbieten, sollte man Abstand nehmen es sei denn es gibt Gründe dem Anbieter zu vertrauen. Das Thema (Security-Apps) werden wir nochmal gesondert behandeln.</p>
+
+<h2 id="weiterführend">Weiterführend</h2>
+
+<p>Mögliche Suchanfragen für weiterführende Informationen:</p>
+
+<ul>
+  <li>sichere DNS Server</li>
+  <li>PiHole</li>
+  <li>DNS Filterlisten</li>
+</ul>]]></content><author><name>Your Name</name></author><category term="anleitung" /><summary type="html"><![CDATA[Sicherer DNS]]></summary></entry><entry><title type="html">Adblock</title><link href="/anleitung/adblock/" rel="alternate" type="text/html" title="Adblock" /><published>2024-05-03T00:00:00+02:00</published><updated>2024-05-03T00:00:00+02:00</updated><id>/anleitung/adblock</id><content type="html" xml:base="/anleitung/adblock/"><![CDATA[<h1 id="adblock">Adblock</h1>
+
+<p>Auf fast jeder Website ist man Werbung ausgesetzt und nicht nur das einem einfach lästige Produkte vorgeschlagen werden, sondern man bekommt von Algorithmen persönlich zugeschnittene Inhalte. Denn wir werden überall wo wir unsere Daten hinterlassen, egal ob bei Instagram oder Onlineshops, dauerhaft ausgewertet und unsere Daten weiterverkauft. Warum? Weil Unternehmen diese Daten brauchen um ihre Produkte und Lieferketten zu optimieren. Durch die Digitalisierung ist die Marktanalyse wesentlich einfacher geworden und es lassen sich quasi “live” Bedarf und Produktion verwalten. Zum einen geben wir auf Plattform unsere Daten ab, zB. was wir gerne kaufen, zum anderen wird uns auf den gleichen oder anderen Plattformen passende Produkte, basierend auf unserem Profil, vorgeschlagen.</p>
+
+<p>Das Problem ist nicht die einzelne, zugeschnittene Werbung oder Auswertung eines Datensatzes unseres Benutzerprofils, sondern die Verknüpfung von ALLEN, jemals angefallenen Datensätzen die über einen existieren. Auch wenn die meisten Daten pseudonymisiert verarbeitet werden, lassen sich doch mit genügend Daten wieder eindeutig Personen anhand ihrer Metadaten identifizieren. Der Algorithmus erkennt anhand der verarbeiteten Suchbegriffe ob jemand eine bestimmte Erkrankung hat, ob und wo man eine Wohnung sucht oder mit seinem Job unzufrieden ist. Dementsprechend werden dann Produkte oder spezielle Websites vorgeschlagen, die mit den ausgewerteten Daten am besten übereinstimmen.</p>
+
+<p>Nicht nur Tracking durch eingebettete Scripte oder aufdringliche Werbung ist das Problem, auch kann über eingebettete Inhalte Schadcode verbreitet werden. Dabei nutzen Kriminelle oder auch staatliche Akteure Lücken im Browser (oder Betriebssystemen) um die Benutzer zB. mit Trojanern zu infizieren - um zB. Kreditkartendaten oder Passwörter zu stehlen. Also was können wir niederschwellig tun um uns gegen Tracking, Werbung, Personalisierung und Infizierung zu schützen? Adblocker benutzen!</p>
+
+<p>Im Browser sollte man aktuell das privatsphärenfreundliche Plugin “U-Block Origin” nutzen (auf allen Plattformen und Browsern verfügbar). Das Plugin “Adblockplus” sollte nicht benutzt werden, dieses sammelt Benutzerdaten. Zusätzlich zu den Standart-Adblocklisten lassen sich weitere/individuelle Blocklisten importieren. Diese findet man zB. unter “privacy adblock list” oder dergleichen.</p>
+
+<p>Im Heimnetz sollte man zB. auf einem Raspberry Pi (oder vergleichbarem Minicomputer) die Software “PiHole” benutzen. Diese setzt einen lokalen DNS-Server auf, mit dem alle Anfragen im Netzwerk gefilter und geblockt werden können. So wird für alle Benutzer eines Netzwerkes global Werbung oder bestimmte Seiten blockiert, unabhängig davon ob diese selber einen Adblocker benutzen oder nicht. Auch hier werden wieder Blocklisten verwendet. Mit diesen lassen sich auch Telemetrie-Server von Microsoft, bekannte NSA-Server oder alles von Google/Facebook/… blockieren. Anfängerfreundlichen Anleitungen dazu gibt es im Netz (zB. “Heimnetz Adblock mit Pihole”).</p>
+
+<p>Mit dem Browser-Plugin “NoScript” können alle in Websiten eingebundenen Objekte, wie Werbung oder Trackingseiten, per Standart blockiert werden und man muss ausgewählten Elementen und Servern Berechtigungen geben. Damit lässt sich sehr fein Filtern, allerdings benötigt dies viel Einarbeitung, Gefühl und Nerven, da für jede Website einmalig Berechtigungen erteilt werden müssen.</p>
+
+<h2 id="tools">Tools</h2>
+
+<ul>
+  <li>Browser-Plugin: U-Block Origin</li>
+  <li>Blocklisten: https://easylist.to</li>
+  <li>Heimnetz-Adblock: PiHole</li>
+  <li>Script-Blocker: NoScript</li>
+</ul>]]></content><author><name>Your Name</name></author><category term="anleitung" /><summary type="html"><![CDATA[Adblock]]></summary></entry><entry><title type="html">Passwords</title><link href="/anleitung/passwords/" rel="alternate" type="text/html" title="Passwords" /><published>2024-04-04T00:00:00+02:00</published><updated>2024-04-04T00:00:00+02:00</updated><id>/anleitung/passwords</id><content type="html" xml:base="/anleitung/passwords/"><![CDATA[<h2 id="sichere-passwörter">Sichere Passwörter</h2>
+
+<p>Ein Passwort hier, ein Passwort da. Überall sind wir auf Passwörter angewiesen, egal ob bei der Bank, Krankenkasse, Email oder auf Arbeit. Wir müssen uns eine Menge merken, denn: niemals ein Passwort mehrfach verwenden! Wird zB. ein Onlineshop gehackt, bei dem du mal bestellt hast, dann kann dabei dein Passwort zusammen mit deiner verwendeten Email-Adresse ausgelesen werden. Ist das Passwort dann dasselbe wie das deines Email-Postfaches, dann kann der Angreifer sehr einfach deinen Account übernehmen. Oder natürlich auch andere mit der Email-Adresse registrierte Dienste.</p>
+
+<p>Überprüfe ob deine Email-Adresse schon einmal in einem Hack vorgekommen ist: https://haveibeenpwned.com</p>
+
+<h2 id="sichere-passwörter-1">Sichere Passwörter</h2>
+
+<p>Um sich sichere Passwörter zu generieren und vor allem komfortabel speichern zu können, sollte man einen Passwortmanager (zB. KeePassXC) benutzen. Dort kann man alle seine Logins verwalten und sich sehr komplexe  (=sichere) Passwörter generieren lassen. Der Vorteil dabei ist auch, das man sich lediglich ein Passwort - nämlich das für den Passwortmanager - merken muss.</p>
+
+<p>Was ein sicheres Passwort ausmacht: Groß/klein, Buchstaben, Zahlen, Zeichen, Länge, Komplexität, keine privaten Daten</p>
+
+<h2 id="unsicherhere-passwörter">Unsicherhere Passwörter</h2>
+
+<p>Ein unsicheres Passwort ist mit relativ wenig Aufwand schnell zu “knacken”:</p>
+
+<p>6-stelliges Passwort: 	0,006 Minuten
+7-stelliges Passwort	: 	0,47 Minuten
+8-stelliges Passwort	: 	33,9 Minuten
+9-stelliges Passwort: 	40,7 Stunden
+10-stelliges Passwort: 	122,1 Tage</p>
+
+<p>Mit heutigen Rechenkapazitäten bei den Behörden oder in der Cloud ist es auch möglich komplexe Passwörter mit entsprechen Leistung in kurzer Zeit zu brechen.</p>
+
+<h2 id="merkbare-sichere-passwörter-bilden">Merkbare, sichere Passwörter bilden</h2>
+
+<p>Merkbare Passwörter kann man sich zB. wie folgt bilden:</p>
+
+<ol>
+  <li>einen Satz bilden (mittlere Sicherheit):</li>
+</ol>
+
+<h1 id="am-liebsten-esse-ich-pizza-mit-vier-zutaten-und-extra-käse">Am liebsten esse ich Pizza mit vier Zutaten und extra Käse!</h1>
+<p>AleiPm4Z+eK!</p>
+
+<ol>
+  <li>zufällige Wörter aus dem Wörterbuch + Zeichen (höhere Sicherheit):</li>
+</ol>
+
+<h1 id="montag-armes-pferd-diesel-klein-nasa-warum">Montag armes Pferd Diesel klein Nasa warum</h1>
+<p>Montag_armes_Pferd_Diesel_klein_Nasa_warum?</p>
+
+<h2 id="passwordmanager">Passwordmanager</h2>
+
+<p>Der Passwortmanager lässt sich auch mit dem Browser verknüpfen, so dass man automatisch bei bekannten Websites eingeloggt werden kann. Diese Funktion ist sicherer als die im Browser integrierten Passwortmanager zu benutzen, denn auch dieser kann von Hackern über bösartige Websites oder Trojaner ausgelesen werden.</p>
+
+<p>KeePassXC (oder auch andere) Passwortmanager lassen sich in der Regel auch auf mobilen Geräten benutzen, so kann man alle genannten Funktionen auch unterwegs benutzen. Auch Smartphones und Tablets sind durch den Zugang zum Internet Hackern ausgesetzt, also sollte natürlich auch dort auf eine sichere Benutzung geachtet werden.</p>
+
+<h2 id="weitere-hinweise-zum-sicheren-umgang-mit-passwörtern">Weitere Hinweise zum sicheren Umgang mit Passwörtern</h2>
+
+<ul>
+  <li>wenn möglich Zwei-Faktor-Authentifizierung benutzen</li>
+  <li>Passkeys (Hardwaretoken) zur Authentifizierung statt Passwort benutzen</li>
+  <li>Passwort nicht analog aufschreiben &amp; ablegen</li>
+  <li>Passwort nicht in Textdateien unverschlüsselt speichern</li>
+  <li>Passwörter regelmäßig wechseln</li>
+</ul>
+
+<h2 id="tools">Tools</h2>
+<ul>
+  <li>Offline Wörterbuch-Passwort Generator mit Würfeln: Diceware</li>
+  <li>Online Wörterbuch-Passwort Generator mit Erklärung: https://diceware.rempe.us</li>
+  <li>DIY-Passwortmanager zum selber betreiben: Vaultwarden</li>
+</ul>]]></content><author><name>Your Name</name></author><category term="anleitung" /><category term="passwörter" /><category term="sicherheit" /><summary type="html"><![CDATA[Sichere Passwörter]]></summary></entry><entry><title type="html">Call</title><link href="/aufruf/call/" rel="alternate" type="text/html" title="Call" /><published>2018-03-23T00:00:00+01:00</published><updated>2018-03-23T00:00:00+01:00</updated><id>/aufruf/call</id><content type="html" xml:base="/aufruf/call/"><![CDATA[<p>#Anarchist Hackers</p>
+
+<p>Basis dieses Textes war ein Post auf <a href="https://hispagatos.org/post/anarchist-hackers/">hispagatos.org</a>, welcher von uns übertragen, übersetzt &amp; ergänzt wurde.</p>
+
+<p>##Der nächste Schritt anarchistischer Praktik: anarchistische Hacker*innen!</p>
+
+<p>Es gab eine Zeit des friedlichen Anarchismus und Menschen beteiligten sich in der ersten Internationalen. Kluge Köpfe und Freigeister aus Frankreich, Spanien, Deutschland und der ganzen Welt haben die Geschichte der Revolution und ihrer Kinder geprägt. Der Anarchismus hat Grenzen überwunden, Horizonte erweitert und seinen Platz in der Gesellschaft manifestert. Er wird umso wichtiger, je mehr Staat und Kapitalismus ihre Herrschaft festigen und die Menschen in Roboter und Produkte des Konsums verwandeln. Um den Status den wir uns über die Jahre erkämpft haben zu halten und auszubauen kann der Anarchismus nicht mehr nur auf der Straße agieren oder friedlich prokrastinieren - wir müssen den Anarchismus auch die digitale Welt erobern lassen und diese nicht der Wirtschaft oder rechten, patriachalen oder anderen machtorientierten Ideologien überlassen! Die englischen “Diggers”, die Aufständigen des 1.Mai, die Durrutis und alle anarchistischen Revolutionen resultierten aus den sie umgebenden Zuständen (Es gäbe noch viel mehr zu erwähnen. Dazu an der Stelle der Hinweis auf die Arte Dokumentation “Kein Gott, Kein Herr - eine kleine Geschichte der Anarchie”<a href="#1">1</a>. So müssen wir uns heutzutage ebenfalls an unsere Zustände anpassen und dürfen den Einfluss von Technologie nicht ausklammern. Seit 2010 gibt es einige anarchistische Hacker*innen, die diese Umstände erkannt haben und erste revolutionäre Akte im Cyberspace vollführt haben. Doch dieser Widerstand ist noch zu gering und muss stetig ausgebaut werden.</p>
+
+<p>Kommen wir nun zum Ursprung des Hackens. Tatsache ist, dass Hacken und Anarchismus schon immer Hand in Hand gingen. Bevor das Hacken demonisiert (80/90er), später kommerzialisiert (ab 1995) und durch Medien und seinen großen Ausverkauf gespalten (ab 2004) wurde, war die Kultur des Hackens sehr libertär geprägt. Überlegen wir einmal kurz was Anarchist<em>innen ausmacht: Anarchisti</em>innen denken, Anarchist<em>innen lernen, Anarchist</em>innen schreiben und sind Autodidakt<em>innen. Anarchist</em>innen wurden schon vieles genannt: Träumer, Rebellen und auch Terroristen, aber der Fakt ist Anarchist<em>innen wissen wie man aufbegehrt. Sie haben vom größten König bis zum bekanntesten Präsidenten alle verrückt gemacht. Anarchist</em>innen wissen wie man kämpft. Anarchist<em>innen kriegen Scheiß gebacken - sie mögen nicht den Weg eines vollendeten Kommunismus gefunden haben, was einige Anarchist</em>innen vielleicht anstreben - aber sie beeinflussen die Gesellschaft, bewegen oder zerstören Formen der Herrschaft und der Unterdrückungskultur. Anarchist<em>innen die ihren Aktivismus leben können sind zu weißen Blutkörperchen der Welt  (“Welt”, denn auch die Umwelt muss gegen jegliche Form des Faschismus beschützt werden!) geworden. Sie haben sich zusammengeschlossen gegen die Herrschenden, das Patriarchat, den Rassismus, Nationalismus, Patriotismus, kultureller Egozentrismus, uvm. Anarchist</em>nnen waren und sind treibene Kräfte in sozialen Bewegungen. Anarchist<em>innen haben sich gebildet, haben sich Wissen angeeignet und sich über die Werkzeuge, Methoden und das kritische Denken der menschlichen Geschichte ausgetauscht. Und das hat sich bis heute nicht geändert. In den 80er Jahren fingen diese Anarchist</em>innen an sich auch die digitale Welt anzueignen, viele nennen sie Hacker<em>innen. Nicht alle Hacker</em>innen sind Anarchist<em>innen, aber Anarchist</em>innen haben die Hacker- &amp;  Phreaker-Welt seit Tag 0 bestimmt.</p>
+
+<p>Diesen Zusammenhang möchten wir hervorheben, denn die Hacker-Ethik wurde von Anfang an vom Anarchismus und seinem Grundkonzept der individuellen Freiheit und der Ablehnung von Herrschaft beeinflusst. Hacker<em>innen verhalten sich wie Anarchistinnen. Sie sind neugierig, sie wollen entdecken, verändern und reparieren. Und viele dieser Hacker</em>innen, die sich selbst noch nicht als Anarchist*innen begreifen bzw. ihren Einfluss und Möglichkeiten auf die digitale Welt noch nicht überschauen können, sind auf der Suche.</p>
+
+<p>Wärend das Internet (damals Arpanet) ursprünglich rein militärisch genutzt, ausgebaut und später für akademische Zwecke erweitert wurde, war zu einem großen Teil die Hackerszene daran beteiligt die Infrastruktur und den Datenfluss für alle Menschen zugänglich zu machen. Dadurch entstand in kürzester Zeit eine fast unendliche Plattform an Möglichkeiten. Wie in der analogen Welt haben sich allerdings auch im Cyberspace schnell Machtstrukturen und Hierachien gebildet bzw. direkt daraus übertragen. Die ersten Hacker<em>innen zeigten ihre Ablehung dieser Strukturen durch erste Hacks. Das Internet ist grundlegend eine Plattform zum Austausch von Informationen mit der Möglichkeit sich international zu verbinden, zu verstehen, zu informieren, zu bilden und Neues zu erschaffen oder Bestehendes zu verbessern. Das Internet war nie dazu bestimmt ausschließlich dem Konsum, der Herrschaft, Überwachung oder dem Kapitalismus zu dienen. Genau das haben Hacker</em>innen verstanden, wenn sie auf der Suche waren nach der Ursache ihrer Antipathie gegenüber Staat und Unternehmertum. Wenn sie die Strukturen verstehen und die antihumanistischen Methoden durchschauen führt ihr Gerechtigkeitssinn sie vielleicht dazu eine Lösung zu suchen, zu hinterfragen und zu verändern - sie entdeckten den Anarchismus für sich. Andersherum begannen manche Anarchist<em>innen damit zu hacken, weil es ein libertärer Weg ist die Welt und die Realität zu formen. Sie haben verstanden, dass die Zukunft vernetzt sein wird und es auch eine Möglichkeit darstellt darüber Einfluss zu nehmen, ja Widerstand leisten zu können. Man kann es drehen und wenden wie man mag: Hacken ist eine anarchistische Handlung. Eine kleine Anmerkung: Wir sprechen hier nicht von der, durch das System und der Propaganda geprägten Bedeutung des Hackens. Ferner davon sind Hacker</em>innen keine Cyber-Kriminellen, so wie auch kein politischer Aktivist ein Krimineller ist, denn alle Handlungen stehen für eine größere Sache, selbst illegale. Hacker<em>innen sind 
+weder unternehmerische Ware noch Menschen die man kaufen und verdrehen kann um wirtschaftlich oder militärisch von  ihnen zu profitieren. Hacker</em>innen sind Hacker*innen, sie finden und beheben Probleme.</p>
+
+<p>2010 wurde in einem i2p AnonAnarchistAction IRC Chatroom folgendes gesagt:
+“Wir Anarchisten kennen Taktiken, wir kennen die Vielfalt der Taktiken und sie funktionieren! Aber seid keine Idioten, denn Hacken ist heutzutage eine der bedeutendsten Taktiken. Es war mal die Zukunft doch jetzt ist es Gegenwart, die Dystopie ist real!” (NetAnarchist)</p>
+
+<p>BITTE lernt zu hacken! Werdet nicht zu verkaufbaren professionellen Cybersecuritytools, die mit Kali Linux und 3 Kommandohacks, ausschließlich zu Gunsten eines Landes, des Faschismus oder eines Unternehmens arbeiten. Lernt ein<em>e Hacker</em>in zu sein! Nicht nur die Fähigkeiten ansich, sondern auch die “Persona”, die Ethik und die libertäre Herangehensweise, die dahinter steht!  Lernt zu verstehen warum Hacker*innen freie Software erschaffen, warum sie Verschlüsselung nutzen, was Dezentralisierung ist und am wichtigsten: wie Systeme funktionieren - wirklich, lernt hacken!</p>
+
+<p>Hacken ist eine Einstellung, eine Herangehensweise die die meißten Anarchisten bereits besitzen. Wir Anarchist<em>innen gehen zwar bereits unseren Weg auf der Strasse - aber wir dürfen nicht vergessen, dasselbe mit der Technik sowie mit allen anderen Aspekten des Lebens zu tun. Hört auf euer Wissen ausschließlich aus Büchern zu beziehen, denn ein</em>e Hacker<em>in ist etwas was sich durch sich selbst definiert. Hacker</em>innen zu sein bedeutet Leidenschaft und das Wissen und die Gewissheit zu haben eine Person zu sein die hinterfragt und neugierig ist und verbessern möchte … jemand der Dinge kaputt machen wird! Und ja, es bedeutet auch eine Person zu sein die Gesetze brechen wird, wenn das bedeutet ein Problem zu finden, reparieren oder gar zu lösen - sei das im realen Leben oder im Cyberspace.</p>
+
+<p>##HACK THE SYSTEM!</p>
+
+<p>An die Anarchist<em>innen und Hacker</em>innen die bereits aktiv sind: Zerschlagt den Cybersecuritykomplex! Wenn sie angepisst sind, gut - sie wissen, dass wir immer einen Schritt vorraus sein werden und sie hinterher ziehen. Wenn sie es noch nicht sind, dann sorgt dafür! Es geht hier nicht um die, die mit Cybersecurity Geld verdienen und für Staaten und Unternehmen arbeiten, dann aber nachts zu Hause “echte” Hacker*innen sein wollen um die Welt zu verändern - legal oder illegal. Es geht hier um revolutionäre Individuen, die nicht nur für das Geld mitmachen - vergeude dein Potenzial nicht, indem du dich für den Erhalt von Herrschaft und Kapitalismus instrumentalisieren lässt. Nutze dein Know-How um Andere zu bilden, Netzwerkbanden zu gründen und eine libertäre Einstellung im Cyberspace vorranzutreiben und zu prägen!</p>
+
+<h2 id="notes">Notes</h2>
+
+<p>(<a name="1">1</a>) <a href="https://www.youtube.com/watch?v=pod6XSemXnw">YouTube</a> - <a href="https://vimeo.com/220947409">Vimeo</a></p>]]></content><author><name>Your Name</name></author><category term="aufruf" /><summary type="html"><![CDATA[#Anarchist Hackers]]></summary></entry><entry><title type="html">Riseup</title><link href="/aufruf/riseup/" rel="alternate" type="text/html" title="Riseup" /><published>2017-11-23T00:00:00+01:00</published><updated>2017-11-23T00:00:00+01:00</updated><id>/aufruf/riseup</id><content type="html" xml:base="/aufruf/riseup/"><![CDATA[<h1 id="rise-up">Rise up!</h1>
+
+<blockquote>
+  <p>Erhebt euch, ihr habt nichts zu verlieren außer euren Stacheldrahtzäunen!</p>
+</blockquote>
+
+<p>Der technologisierte Kapitalismus des 21. Jahrhunderts erweitert und stabilisiert den durch die industrielle Revolution des 19. Jahrhunderts geprägten Kapitalismus. Fords und Taylors Errungenschaften um die Präszisierung der Arbeit und Einschränkung der Autonomie der Arbeiter*innen werden durch neue Technologien wiederum revolutioniert. Automatisierte Maschinen und künstliche Intelligenzen sollen Großteile von Arbeitsprozessen vorallem in der Produktion, dem Finanz- und Logistiksektor übernehmen oder haben dies bereits getan. Der Mensch wird ausschließlich zur Programmierung, Entwicklung und Wartung dieser dienen oder erledigt stupide Assistenzaufgaben. Die eigentlich verwertbare “Arbeit” die Menschen in Zukunft angehen sollen ist das Füttern des kybernetischen-kapitalistischen Systems mit verwertbaren Handlungen. Der Mensch wird zum Produkt, dessen Wert sich anhand der Fähigkeit der systemischen Integration misst. Soll heißen: umso mehr verwertbare Daten - Feedback - eingespeist, umso mehr vom System erwünschte Handlungen ausgeführt werden, umso wertvoller ist das kleine Rädchen im System. Die täglich generierten Inhalte und Verbindungen werden analysiert und in Beziehung gesetzt um daraus Handlungsspielräume zu entwickeln, die für die Vermarktung nützlich sind. So liefern die alltäglichen Sensoren, wie Smartphones, Facebook, Instagram, Twitter, Chats, Amazoneinkäufe, Suchanfragen bei Google, Onlinebanking usw., beständig Daten - egal ob die Informationen aus unserer Sicht “sinnvoll” oder nicht sinnvoll sind. Den Systemen hinter den Sensoren ist egal was im Detail in einer Email steht, interessant ist das »wer, wo, wann und wie«.  Die täglichen Verbindungen zwischen allen “Produkten” (Identitäten) zeichnen ein Netzwerk unserer Handlungen und damit unserer Realität nach, dieses gilt es im Sinne des Wertschöpfungsprozesses für den Markt zu beeinflussen. Die Systeme imitieren das Verhalten und assimilieren dieses Netzwerk durch polarisierende Nachrichten/Werbungen, zugeschnittenen Sucherergebnissen oder anderen Techniken zur Beeinflussung. Dadurch werden künstliche Rahmen um unsere Realitäten gelegt, welche uns in die richtige Richtung - das “richtige” Verhalten”, also verwertbaren Handlungen - führen sollen. Die gesellschaftliche Anwendung von Whatsapp, Selfie(stick)s und anderen technologischen “Trends” machen dies klar: Zwanghaftes Verhalten entwickelt sich, um das Dauersenden aufrecht zu erhalten - Whatsappgruppen für Familie, Freunde, Arbeit - Instagram-Stories für jeden Bereich seines Lebens und jede noch so kleine Filterblase - es kann nicht zu genug davon geben!</p>
+
+<h2 id="wir-sind-die-ware-nicht-die-kunden">Wir sind die Ware, nicht die Kunden!</h2>
+
+<p>Die Zeiten der orwellschen “Big Brother” Metapher sind vorbei. Neben der militärischen und behördlichen Anwendung des Internets und damit vernetzter Technologien zur Überwachung und Kontrolle haben kapitalistische Unternehmen längst gleichgroße Brüder und Schwerstern aufgezogen. Die kommerzielle Überwachung sucht nicht nach der “Nadel im Heuhaufen” wie es die NSA im “Kampf gegen den Terrorismus” sagt zu tun, sondern braucht tatsächlich alle möglichen Informationen von Allem an sich. Und so sammeln Konzerne Unmengen personalisierter Daten und werten diese aus, um ihre Vermarktungsstragien in Echtzeit anpassen zu können.</p>
+
+<p>Die allgegenwärtige staatliche Überwachung ließ sich zuletzt in der Metapher des Panoptikum finden. Ein “Ordnungsprinzip” westlicher Gesellschaften. Doch heute gehen wir über Orwell und Foucault hinaus. Heute sind wir nicht mehr Teil eines großen panoptischen Systems, heute tragen wir alle unser eigenes kleines panoptisches System in uns herum. Immer bestrebt unser Leben weitestgehend zu optimieren und mit der Gesellschaft um uns herum abzugleichen. Seitdem auch die Wirtschaft ihre Sensoren immer weiter ausbaut und vernetzt, erlebt die Rolle des panoptischen Überwachers eine Transformation hin zu einer “flüchtigen Überwachung”.  Dort, wo der Staat (bzw. das Panoptikum) war, der eine gewisse  Verantwortung mit sich trug, ist nun auch der Markt. Und so flüchtig -   schnelllebig, dynamisch - wie auch der Markt ist, ist auch dessen “Überwachung”. Überwacht der Staat widerrechtlich, kann der Staat zur Verantwortung gezogen werden. Ein Konzern kann sich seiner Verantwortlichkeit gegenüber den Konsument*Innen einfach entziehen. Er schaut kurz zu, nimmt was er braucht und geht wieder; Verwertet dich, ohne dass  du eine Chance hast zu widersprechen.</p>
+
+<p>Diese flüchtige Überwachung geht aber nicht nur von den  Sensoren um uns herum aus, sondern auch von uns selbst - wir lieferen jederzeit Daten über uns, überwachen uns selbst, optimieren uns - wir passen uns an den Markt an, nicht der Markt an uns. Dabei kann jedes noch so sinnlose Detail unseres Tagesablaufes, in der Summe zu verwertbaren Informationen werden. Bevor wir wissen,  was wir morgen kaufen wollen, erkennen die Sensoren unseren Zustand und stubsen (Stichwort: Nudging) uns in Richtung des Konsums. Nicht nur Google weiß von uns, ob wir schwanger sind - unsere Versicherung, unsere Arbeitgeber, Dr. Oetker und nicht zuletzt die Hersteller von Kinderspielsachen wissen es. Und so bekommen wir die Werbung, die auf uns zugeschnitten ist - auch in Form von Nachrichten (Stichwort: Sponsored Content). Und so wird die Zukunft aus dem heute erlebten, geteilten, gelikten Stück für Stück zusammengesetzt und morgen kaufen wir diese “Zukunft” über Amazon oder schauen sie bei Netflix.</p>
+
+<h2 id="angriff-und-verteidigung">Angriff und Verteidigung</h2>
+
+<p>Das soziale Leben wurde durch das Internet und all die technologischen Entwicklungen um den digitalen Raum erweitert. Während wir  als emanzipatorische Linke täglich um den öffentlichen Raum kämpfen und größtenteils verlieren,  werden wir nun auch auf diesen digitalen Ebenen eingeschränkt und attackiert. Und gerade um diesen neuen Raum mit all seinen Möglichkeiten müsste eigentlich auch die “klassische”  Linke kämpfen. Wo bleibt die Solidarität für Whistleblower<em>innen und Hacker</em>innen die im Dienste der Allgemeinheit Daten offenlegten und Infrastruktur angriffen? Wo bleiben die digitalen Sitzblockaden, Besetzungen und Sabotagen? Wo die Maschinenstürmer*innen?</p>
+
+<p>Politik und Wirtschaft  vergrößern täglich ihren Einfluss auf das Internet, versuchen ihre Werte und Rechte darauf auszudehnen und anzuwenden. Das Dauersenden der Nutzerinnen wird zur Pflicht und damit das Internet zum Werkzeug digitaler Herrschaft und Kontrolle. Gegen den “Cyberkapitalismus” und seine Institutionen müssen wir solidarische Netzwerke schaffen - gegen die technologische Realität von Ausbeutung, Zersetzung und Depression. Dem bevormundendem, autoritärem, patriachalem und rassistischem technologischem System haben wir ein autonomes, hierarchieloses, emanzipatorisches Netzwerk entgegen zu stellen, dessen “Systeme” wir alle gemeinsam und unsere “Sensoren” unsere Gefühle sind.</p>
+
+<p>Es ist außerordentlich wichtig dass wir uns auf allen Ebenen mit  Technologie in ihrer Gesamtheit beschäftigen, sie beobachten und  beeinflussen. Es ist nicht nötig dabei technologischen Trends aufzusitzen und/oder einem technischen Enthusiasmus zu verfallen. Die Technologie, die ideologisierte Technik, wird nicht wegzudenken sein und immer gesellschaftlichen, politischen und  ökonomischen Einfluss besitzen. Also müssen wir lernen damit umzugehen, lernen wie wir uns schützen, wie wir angreifen, wie wir damit leben (können) ohne von dem System aufgefressen zu werden. Unsere Netzwerke müssen zwingend einen kommunikativen Anschluss an das Ganze haben - also auch an das Internet - natürlich ohne sich dabei der Technologie zu unterwerfen. Ohne diesen Anschluss haben wir keine Chance uns entsprechend zu vernetzen und viel wichtiger, auf das System einzuwirken.  Denn Konzerne und Staaten haben einen strukturellen Vorsprung, ihre Netzwerke funktionieren erschreckend effizient und die (angehenden) Architekt*innen für unsere Zukunft werden gut bezahlt. Die einen träumen von der technologischen Singularität und wollen unsterblich, transhuman werden durch den Einsatz von Technologie. Die anderen träumen von der künstlichen Intelligenz die all unsere Lebensbereiche erfasst, Lebensprozesse optimiert und unsere Weltprobleme algorithmisch löst. Alle diese gängigen Zukunftsvisionen, stammen aus den von vorrangig weißen Kapitalisten dominierten Technologieclustern (Silicon Valley, Silicon Saxony, …) dieser Welt und handeln von Kontrolle. Das Heranzüchten von Ingenieuren und BWLern an deutschen Hochschulen, die die neue Zukunft im Namen der Konzerne gestalten sollen und das Geschrei nach Industrie 4.0, Arbeit 4.0, Mensch 3.0 wird zum staats- ja sogar systemtragenden Element. Eine zukünftige Gesellschaft will geplant und verwaltet werden ohne dabei viel Gesicht (Macht) zu verlieren. So wie bei jeder Revolution - ob digital oder nicht - die Herrschenden haben die Vorteile erkannt und leiten einen sanften Übergang ein und versuchen dabei möglichst wenig Kontrolle/Macht zu verlieren.</p>
+
+<p>Freie Software, Darknets wie TOR/i2p und ihre “illegalen” Märkte sowie der Ansatz einer unabhängigen digitalen Währung zeigen eine Seite eines funktionierenden praktischen digitalen Anarchismus (Kryptoanarchismus).  Wikileaks, Nazileaks und Hacktivismus sind Beispiele für eine andere Seite, eine offensivere. Sowohl die eine als auch die andere Seite, ob radikal oder nicht, ermächtigen sich der Technologie. Dieser Akt wird von den Herrschenden als Angriff gegen die Ordnung gesehen. Wo früher Interpol zur Zerschlagung der “anarchistischen Verschwörung” gegen die Monarchien<a href="#1">1</a> gegründet und finanziert wurde, sind heute allehand Cyberabwehrzentren, Cyberwehren und private Cyberdetektive die mit den Großen zusammenarbeiten. Die harte Repression die auf widerständische Aktionen im digitalen System folgt, lässt sich an den Schicksalen Julian Assanges, Chelsea Mannings, Edward Snowdens, Jeremy Hammonds und vielen anderen festmachen über die kaum mehr gesprochen wird. Das harmlose Überfluten einer Website mit Anfragen, welches dem dauerhaften Drücken der F5-Taste gleichkommt, wurde für einige 16-Jährige des Anonymous Kollektives zum Verhängnis und das FBI verhängte ihnen ein paar Jahre Internetverbot. Kiddies, die sich Technik aneigneten und kleine politische Akte mit ihnen vollführten wurden genauso zu Staatsfeinden erklärt wie die, die Interna der NSA und anderer mieser Organisationen geleakt hatten. Diese harte Repression darauf zeigt welcher Macht wir uns eigentlich bedienen können und wie angreifbar das System doch eigentlich ist. Und in Zeiten von “Internet of Things” und SmartIrgendwas werden die Möglichkeiten der Sabotage sogar leichter und vielfältiger als noch vor einigen Jahren.</p>
+
+<h2 id="tldr">tl:dr</h2>
+
+<p>Wir müssen den Umgang mit Technik lernen und uns Technologien aneignen. Wir müssen unverwertbar werden für das System, Masken tragen  und es mit eigenen Mitteln angreifen, schwächen und beeinflussen, bevor die Möglichkeit eines Richtungswechsels (wohin auch immer) völlig verschwunden ist.  Die Möglichkeit grundlegender sozialer Veränderung wird durch die stetige Manifestierung der digitalen Herrschaft immer geringer werden, so wie auch die Orte an denen man noch unerfasst leben kann.</p>
+
+<p>Also lassen wir uns auf die digitale Realität ein oder leugnen wir diese, wie auch vor den Snowden Enthüllungen den Überwachungsstaat? Vermehrte Angriffe auf digitale Infrastrukturen in letzter Zeit und angezündete Amazonlieferfahrzeuge im Rahmen der  #makeamazonpay-Kampagne lassen hoffen.</p>
+
+<h2 id="notes">Notes</h2>
+
+<p>Hintergrund für diesen Beitrag sind die Veröffentlichungen des Capulcu Kollektives, “Kybernetik und Revolte” von Tiqqun, Joseph Weizenbaums “Macht der Computer und Ohnmacht der Vernunft”, Zygmund Baumans/David Lyons Gespräche über “Flüchtige Überwachung” und media.ccc.de.</p>
+
+<p>(<a name="1">1</a>) Stichwort: “Propaganda der Tat” - anarchistische Anschläge auf Herrschende häuften sich seit der Industrialisierung und Industrielle sowie Kriminalbeamte halluzinierten sich eine Verschwörung von Anarchist*innen gegen die herrschende Ordnung der Monarchien im 19. &amp; frühen 20. Jahrhundert her.</p>]]></content><author><name>Your Name</name></author><category term="aufruf" /><summary type="html"><![CDATA[Rise up!]]></summary></entry></feed>

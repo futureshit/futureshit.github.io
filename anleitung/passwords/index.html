@@ -1,0 +1,664 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Passwords - Futureshit.</title>
+<meta name="description" content="Sichere Passwörter">
+
+
+  <meta name="author" content="Your Name">
+  
+  <meta property="article:author" content="Your Name">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Futureshit.">
+<meta property="og:title" content="Passwords">
+<meta property="og:url" content="/anleitung/passwords/">
+
+
+  <meta property="og:description" content="Sichere Passwörter">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2024-04-04T00:00:00+02:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="/anleitung/passwords/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Futureshit. Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--posts" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Futureshit.
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/categories/"
+                
+                
+              >Artikel.</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <span class="nav__sub-title">Privatsphäre.</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/falsesec/">Falsche Sicherheit</a></li>
+            
+              <li><a href="/android/">Google? Nein Danke!</a></li>
+            
+              <li><a href="/comsurv/">Kommerzielle Überwachung</a></li>
+            
+              <li><a href="/services/">Kostenlose Dienste</a></li>
+            
+              <li><a href="/optout/">Opt out</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Links.</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/howto/">Anleitungen</a></li>
+            
+              <li><a href="/misc/">Diverses</a></li>
+            
+              <li><a href="/inis/">Initiativen</a></li>
+            
+              <li><a href="/maps/">Karten</a></li>
+            
+              <li><a href="/leaks/">Leaks</a></li>
+            
+              <li><a href="/opsec/">OpSec</a></li>
+            
+              <li><a href="/osint/">OsInt</a></li>
+            
+              <li><a href="/provider/">Provider</a></li>
+            
+              <li><a href="/tests/">Tests</a></li>
+            
+              <li><a href="/tools/">Tools</a></li>
+            
+              <li><a href="/events/">Veranstaltungen</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <span class="nav__sub-title">Media.</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/blogs/">Blogs</a></li>
+            
+              <li><a href="/books/">Bücher</a></li>
+            
+              <li><a href="/docus/">Dokumentationen</a></li>
+            
+              <li><a href="/fiction/">Fiktion</a></li>
+            
+              <li><a href="/talks/">Vorträge</a></li>
+            
+          </ul>
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <div class="archive">
+    
+      <h1 id="page-title" class="page__title">Passwords</h1>
+    
+    <h2 id="sichere-passwörter">Sichere Passwörter</h2>
+
+<p>Ein Passwort hier, ein Passwort da. Überall sind wir auf Passwörter angewiesen, egal ob bei der Bank, Krankenkasse, Email oder auf Arbeit. Wir müssen uns eine Menge merken, denn: niemals ein Passwort mehrfach verwenden! Wird zB. ein Onlineshop gehackt, bei dem du mal bestellt hast, dann kann dabei dein Passwort zusammen mit deiner verwendeten Email-Adresse ausgelesen werden. Ist das Passwort dann dasselbe wie das deines Email-Postfaches, dann kann der Angreifer sehr einfach deinen Account übernehmen. Oder natürlich auch andere mit der Email-Adresse registrierte Dienste.</p>
+
+<p>Überprüfe ob deine Email-Adresse schon einmal in einem Hack vorgekommen ist: https://haveibeenpwned.com</p>
+
+<h2 id="sichere-passwörter-1">Sichere Passwörter</h2>
+
+<p>Um sich sichere Passwörter zu generieren und vor allem komfortabel speichern zu können, sollte man einen Passwortmanager (zB. KeePassXC) benutzen. Dort kann man alle seine Logins verwalten und sich sehr komplexe  (=sichere) Passwörter generieren lassen. Der Vorteil dabei ist auch, das man sich lediglich ein Passwort - nämlich das für den Passwortmanager - merken muss.</p>
+
+<p>Was ein sicheres Passwort ausmacht: Groß/klein, Buchstaben, Zahlen, Zeichen, Länge, Komplexität, keine privaten Daten</p>
+
+<h2 id="unsicherhere-passwörter">Unsicherhere Passwörter</h2>
+
+<p>Ein unsicheres Passwort ist mit relativ wenig Aufwand schnell zu “knacken”:</p>
+
+<p>6-stelliges Passwort: 	0,006 Minuten
+7-stelliges Passwort	: 	0,47 Minuten
+8-stelliges Passwort	: 	33,9 Minuten
+9-stelliges Passwort: 	40,7 Stunden
+10-stelliges Passwort: 	122,1 Tage</p>
+
+<p>Mit heutigen Rechenkapazitäten bei den Behörden oder in der Cloud ist es auch möglich komplexe Passwörter mit entsprechen Leistung in kurzer Zeit zu brechen.</p>
+
+<h2 id="merkbare-sichere-passwörter-bilden">Merkbare, sichere Passwörter bilden</h2>
+
+<p>Merkbare Passwörter kann man sich zB. wie folgt bilden:</p>
+
+<ol>
+  <li>einen Satz bilden (mittlere Sicherheit):</li>
+</ol>
+
+<h1 id="am-liebsten-esse-ich-pizza-mit-vier-zutaten-und-extra-käse">Am liebsten esse ich Pizza mit vier Zutaten und extra Käse!</h1>
+<p>AleiPm4Z+eK!</p>
+
+<ol>
+  <li>zufällige Wörter aus dem Wörterbuch + Zeichen (höhere Sicherheit):</li>
+</ol>
+
+<h1 id="montag-armes-pferd-diesel-klein-nasa-warum">Montag armes Pferd Diesel klein Nasa warum</h1>
+<p>Montag_armes_Pferd_Diesel_klein_Nasa_warum?</p>
+
+<h2 id="passwordmanager">Passwordmanager</h2>
+
+<p>Der Passwortmanager lässt sich auch mit dem Browser verknüpfen, so dass man automatisch bei bekannten Websites eingeloggt werden kann. Diese Funktion ist sicherer als die im Browser integrierten Passwortmanager zu benutzen, denn auch dieser kann von Hackern über bösartige Websites oder Trojaner ausgelesen werden.</p>
+
+<p>KeePassXC (oder auch andere) Passwortmanager lassen sich in der Regel auch auf mobilen Geräten benutzen, so kann man alle genannten Funktionen auch unterwegs benutzen. Auch Smartphones und Tablets sind durch den Zugang zum Internet Hackern ausgesetzt, also sollte natürlich auch dort auf eine sichere Benutzung geachtet werden.</p>
+
+<h2 id="weitere-hinweise-zum-sicheren-umgang-mit-passwörtern">Weitere Hinweise zum sicheren Umgang mit Passwörtern</h2>
+
+<ul>
+  <li>wenn möglich Zwei-Faktor-Authentifizierung benutzen</li>
+  <li>Passkeys (Hardwaretoken) zur Authentifizierung statt Passwort benutzen</li>
+  <li>Passwort nicht analog aufschreiben &amp; ablegen</li>
+  <li>Passwort nicht in Textdateien unverschlüsselt speichern</li>
+  <li>Passwörter regelmäßig wechseln</li>
+</ul>
+
+<h2 id="tools">Tools</h2>
+<ul>
+  <li>Offline Wörterbuch-Passwort Generator mit Würfeln: Diceware</li>
+  <li>Online Wörterbuch-Passwort Generator mit Erklärung: https://diceware.rempe.us</li>
+  <li>DIY-Passwortmanager zum selber betreiben: Vaultwarden</li>
+</ul>
+
+
+<ul class="taxonomy__index">
+  
+  
+    <li>
+      <a href="#2024">
+        <strong>2024</strong> <span class="taxonomy__count">4</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2018">
+        <strong>2018</strong> <span class="taxonomy__count">1</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2017">
+        <strong>2017</strong> <span class="taxonomy__count">1</span>
+      </a>
+    </li>
+  
+</ul>
+
+
+
+
+  <section id="2024" class="taxonomy__section">
+    <h2 class="archive__subtitle">2024</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/anleitung/browser/" rel="permalink">Browser
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          7 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Browser Best Practice
+
+Anmerkung zur Wahl des Browsers
+
+
+  Chrome ist mit Abstand der schnellste Browser, aber auch der am meißten “nach Hause” telefonierend...</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/anleitung/dns/" rel="permalink">Dns
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Sicherer DNS
+</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/anleitung/adblock/" rel="permalink">Adblock
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Adblock
+</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/anleitung/passwords/" rel="permalink">Passwords
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Sichere Passwörter
+</p>
+  </article>
+</div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to top &uarr;</a>
+  </section>
+
+  <section id="2018" class="taxonomy__section">
+    <h2 class="archive__subtitle">2018</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/aufruf/call/" rel="permalink">Call
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          6 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">#Anarchist Hackers
+</p>
+  </article>
+</div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to top &uarr;</a>
+  </section>
+
+  <section id="2017" class="taxonomy__section">
+    <h2 class="archive__subtitle">2017</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/aufruf/riseup/" rel="permalink">Riseup
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          8 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Rise up!
+</p>
+  </article>
+</div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to top &uarr;</a>
+  </section>
+
+
+  </div>
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 <a href="">Futureshit.</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
