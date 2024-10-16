@@ -6,7 +6,7 @@
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
 
-<html lang="en-US" class="no-js">
+<html lang="de-DE" class="no-js">
   <head>
     <meta charset="utf-8">
 
@@ -14,12 +14,9 @@
 <meta name="description" content="">
 
 
-  <meta name="author" content="Your Name">
-  
-
 
 <meta property="og:type" content="website">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="de_DE">
 <meta property="og:site_name" content="Futureshit.">
 <meta property="og:title" content="Futureshit.">
 <meta property="og:url" content="/talks/">
@@ -34,10 +31,6 @@
 
 
 
-
-  
-
-  
 
 
 <link rel="canonical" href="/talks/">
@@ -108,8 +101,13 @@
               >Artikel.</a>
             </li></ul>
         
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
         <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">Toggle menu</span>
+          <span class="visually-hidden">Menü ein-/ausschalten</span>
           <div class="navicon"></div>
         </button>
         <ul class="hidden-links hidden"></ul>
@@ -141,7 +139,7 @@
       <nav class="nav__list">
   
   <input id="ac-toc" name="accordion-toc" type="checkbox" />
-  <label for="ac-toc">Toggle menu</label>
+  <label for="ac-toc">Menü ein-/ausschalten</label>
   <ul class="nav__items">
     
       
@@ -267,7 +265,7 @@
 <ul>
   <li>CCC-TV: <a href="https://media.ccc.de/browse/conferences/datenspuren/2014/DS2014_-_5925_-_de_-_kleiner_saal_-_201409131300_-_digitale_selbstverteidigung_-_wie_schutze_ich_mich_vor_uberwachung_-_stefan_bocker.html#video" target="_blank">Digitale Selbstverteidigung: Wie schütze ich mich vor Überwachung?</a></li>
   <li>CCC-TV: <a href="https://media.ccc.de/browse/conferences/datenspuren/2014/DS2014_-_5988_-_de_-_grosser_saal_-_201409131400_-_unsichtbar_durchs_netz_mit_i2p_-_qbi.html#video" target="_blank">Eine Einführung in das Anonymisierungsnetzwerk I2P</a></li>
-  <li><a title="CCC-TV" href="https://media.ccc.de/tags/" target="_blank">mehr</a></li>
+  <li><a title="CCC-TV" href="https://media.ccc.de/" target="_blank">mehr</a></li>
 </ul>
 
 
@@ -299,6 +297,17 @@
     </div>
 
     
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Suchbegriff eingeben..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
 
     <div id="footer" class="page__footer">
       <footer>
@@ -308,7 +317,7 @@
         <div class="page__footer-follow">
   <ul class="social-icons">
     
-      <li><strong>Follow:</strong></li>
+      <li><strong>Folgen:</strong></li>
     
 
     
@@ -333,7 +342,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2024 <a href="">Futureshit.</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2024 <a href="">Futureshit.</a>. Möglich durch <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
@@ -343,6 +352,10 @@
 
 
 
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
 
 
 

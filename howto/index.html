@@ -6,7 +6,7 @@
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
 
-<html lang="en-US" class="no-js">
+<html lang="de-DE" class="no-js">
   <head>
     <meta charset="utf-8">
 
@@ -14,12 +14,9 @@
 <meta name="description" content="">
 
 
-  <meta name="author" content="Your Name">
-  
-
 
 <meta property="og:type" content="website">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="de_DE">
 <meta property="og:site_name" content="Futureshit.">
 <meta property="og:title" content="Futureshit.">
 <meta property="og:url" content="/howto/">
@@ -34,10 +31,6 @@
 
 
 
-
-  
-
-  
 
 
 <link rel="canonical" href="/howto/">
@@ -108,8 +101,13 @@
               >Artikel.</a>
             </li></ul>
         
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
         <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">Toggle menu</span>
+          <span class="visually-hidden">Menü ein-/ausschalten</span>
           <div class="navicon"></div>
         </button>
         <ul class="hidden-links hidden"></ul>
@@ -141,7 +139,7 @@
       <nav class="nav__list">
   
   <input id="ac-toc" name="accordion-toc" type="checkbox" />
-  <label for="ac-toc">Toggle menu</label>
+  <label for="ac-toc">Menü ein-/ausschalten</label>
   <ul class="nav__items">
     
       
@@ -252,31 +250,37 @@
 
       <section class="page__content" itemprop="text">
         
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-star"></i> Inhalt</h4></header>
+              <ul class="toc__menu"><li><a href="#handbücher">Handbücher</a></li><li><a href="#smartphone-apps">Smartphone-Apps</a></li><li><a href="#browser--plugins">Browser (+ Plugins)</a></li><li><a href="#anonymisierung">Anonymisierung</a></li><li><a href="#email">Email</a></li><li><a href="#pgp">PGP</a></li><li><a href="#festplattenverschlüsselung">Festplattenverschlüsselung</a></li><li><a href="#live-systeme">Live-Systeme</a></li><li><a href="#betriebssysteme">Betriebssysteme</a></li><li><a href="#sonstiges">Sonstiges</a></li></ul>
+            </nav>
+          </aside>
+        
         <h2 id="handbücher">Handbücher</h2>
 <ul>
-  <li><a href="http://anonym.to/?https://www.privacy-handbuch.de/download/privacy-handbuch.pdf">Privacy-Handbuch</a></li>
-  <li><a href="https://www.cryptoparty.in/documentation/handbook" target="_blank">Cryptoparty-Handbook</a></li>
+  <li><a href="https://www.privacy-handbuch.de/download/privacy-handbuch.pdf">Privacy-Handbuch</a></li>
+  <li><a href="https://www.cryptoparty.in/learn/handbook" target="_blank">Cryptoparty-Handbook</a></li>
   <li>Reporter without borders: <a href="http://www.rsf.org/IMG/pdf/Bloggers_Handbook2.pdf">Bloggers &amp; Cyber-Dissidents Handbook</a></li>
-  <li>Riseup: <a href="https://zine.riseup.ne/" target="_blank">Digital Security for Activists</a></li>
+  <li>Riseup: <a href="https://riseup.net/en/security/resources" target="_blank">Digital Security for Activists</a></li>
   <li>EFF: <a href="https://ssd.eff.org/" target="_blank">Surveillance Self-Defense</a></li>
 </ul>
 
 <h2 id="smartphone-apps">Smartphone-Apps</h2>
 <ul>
-  <li><a href="https://guardianproject.info/howto/browsefreely/" target="_blank">OrBot</a></li>
-  <li><a href="https://guardianproject.info/howto/chatsecurely/" target="_blank">ChatSecure</a></li>
+  <li><a href="https://orbot.app/" target="_blank">OrBot</a></li>
+  <li><a href="https://chatsecure.org/" target="_blank">ChatSecure (iOS)</a></li>
 </ul>
 
 <h2 id="browser--plugins">Browser (+ Plugins)</h2>
 <ul>
   <li><a href="https://www.privacy-handbuch.de/handbuch_21.htm" target="_blank">Spurenarm Surfen</a></li>
-  <li><a href="https://www.privacy-handbuch.de/handbuch_93.htm" target="_blank">VertrauenswÃ¼rdige DNS-Server einstellen</a></li>
+  <li><a href="https://www.privacy-handbuch.de/handbuch_93.htm" target="_blank">Vertrauenswürdige DNS-Server einstellen</a></li>
 </ul>
 
 <h2 id="anonymisierung">Anonymisierung</h2>
 <ul>
   <li><a href="https://www.privacy-handbuch.de/handbuch_24a.htm" target="_blank">TOR-Browser</a></li>
-  <li><a href="https://www.privacy-handbuch.de/handbuch_23a.htm" target="_blank">JonDoym</a></li>
   <li><a href="https://www.privacy-handbuch.de/handbuch_24t.htm" target="_blank">proxychains</a></li>
 </ul>
 
@@ -284,7 +288,6 @@
 <ul>
   <li>Netzpolitik: <a href="https://netzpolitik.org/2013/anleitung-so-verschlusselt-ihr-eure-e-mails-mit-pgp/" target="_blank">Emails mit PGP verschlüsseln + Video</a></li>
   <li><a href="https://www.privacy-handbuch.de/handbuch_31d.htm" target="_blank">Sichere Konfiguration von Thunderbird</a></li>
-  <li>Enigmail (Thunderbird-Plugin fÃ¼r PGP):<a href="http://wiki.fsfw-dresden.de/doku.php?id=doku:gpg_anleitung_linux" target="_blank"> Linux</a> /<a href="http://wiki.fsfw-dresden.de/doku.php?id=doku:gpg_anleitung_windows" target="_blank"> Windows</a></li>
 </ul>
 
 <h2 id="pgp">PGP</h2>
@@ -294,9 +297,8 @@
 
 <h2 id="festplattenverschlüsselung">Festplattenverschlüsselung</h2>
 <ul>
-  <li><a href="http://linux-gefaellt-mir.blogspot.de/2014/06/debian-gesamte-platte-mit-verschluesseltem-lvm-anleitung-der-installation-linux.html" target="_blank">Vollverschlüsseltes Betriebssystem</a> exemplarisch an Debian</li>
-  <li><a href="http://www.andreas-janssen.de/cryptodisk.html" target="_blank">Partitionen/Festplatten verschlüsseln</a> an Debian</li>
-  <li><a href="https://www.privacy-handbuch.de/handbuch_37a.htm" target="_blank">Daten verschlÃ¼sseln mit DM-Crypt</a></li>
+  <li><a href="https://curius.de/verschluesselung/luks-betriebssystem-verschluesseln/" target="_blank">Vollverschlüsseltes Betriebssystem</a> exemplarisch an Debian</li>
+  <li><a href="https://www.privacy-handbuch.de/handbuch_37a.htm" target="_blank">Daten verschlüsseln mit DM-Crypt</a></li>
 </ul>
 
 <h2 id="live-systeme">Live-Systeme</h2>
@@ -311,10 +313,10 @@
 
 <h2 id="sonstiges">Sonstiges</h2>
 <ul>
-  <li><a href="http://www.easy-network.de/mac-adresse-unter-linux-aendern.html" target="_blank">MAC-Adresse ändern</a>&lt;/li&gt;</li>
-  <li><a href="https://www.privacy-handbuch.de/handbuch_42.htm" target="_blank">Daten löschen</a>&lt;/li&gt;</li>
-  <li><a href="https://www.privacy-handbuch.de/handbuch_41.htm" target="_blank">Daten verstecken</a>&lt;/li&gt;</li>
-  <li><a href="https://www.privacy-handbuch.de/handbuch_43.htm" target="_blank">Metadaten aus Fotos &amp; PDF´s löschen</a>&lt;/li&gt;</li>
+  <li><a href="http://www.easy-network.de/mac-adresse-unter-linux-aendern.html" target="_blank">MAC-Adresse ändern</a></li>
+  <li><a href="https://www.privacy-handbuch.de/handbuch_42.htm" target="_blank">Daten löschen</a></li>
+  <li><a href="https://www.privacy-handbuch.de/handbuch_41.htm" target="_blank">Daten verstecken</a></li>
+  <li><a href="https://www.privacy-handbuch.de/handbuch_43.htm" target="_blank">Metadaten aus Fotos &amp; PDF´s löschen</a></li>
 </ul>
 
 
@@ -346,6 +348,17 @@
     </div>
 
     
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Suchbegriff eingeben..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
 
     <div id="footer" class="page__footer">
       <footer>
@@ -355,7 +368,7 @@
         <div class="page__footer-follow">
   <ul class="social-icons">
     
-      <li><strong>Follow:</strong></li>
+      <li><strong>Folgen:</strong></li>
     
 
     
@@ -380,7 +393,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2024 <a href="">Futureshit.</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2024 <a href="">Futureshit.</a>. Möglich durch <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
@@ -390,6 +403,10 @@
 
 
 
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
 
 
 

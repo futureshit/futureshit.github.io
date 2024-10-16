@@ -6,7 +6,7 @@
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
 
-<html lang="en-US" class="no-js">
+<html lang="de-DE" class="no-js">
   <head>
     <meta charset="utf-8">
 
@@ -14,12 +14,9 @@
 <meta name="description" content="">
 
 
-  <meta name="author" content="Your Name">
-  
-
 
 <meta property="og:type" content="website">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="de_DE">
 <meta property="og:site_name" content="Futureshit.">
 <meta property="og:title" content="Futureshit.">
 <meta property="og:url" content="/android/">
@@ -34,10 +31,6 @@
 
 
 
-
-  
-
-  
 
 
 <link rel="canonical" href="/android/">
@@ -108,8 +101,13 @@
               >Artikel.</a>
             </li></ul>
         
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
         <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">Toggle menu</span>
+          <span class="visually-hidden">Menü ein-/ausschalten</span>
           <div class="navicon"></div>
         </button>
         <ul class="hidden-links hidden"></ul>
@@ -141,7 +139,7 @@
       <nav class="nav__list">
   
   <input id="ac-toc" name="accordion-toc" type="checkbox" />
-  <label for="ac-toc">Toggle menu</label>
+  <label for="ac-toc">Menü ein-/ausschalten</label>
   <ul class="nav__items">
     
       
@@ -252,6 +250,13 @@
 
       <section class="page__content" itemprop="text">
         
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-star"></i> Inhalt</h4></header>
+              <ul class="toc__menu"><li><a href="#eine-welt-ohne-google-ist-möglich">Eine Welt ohne Google ist möglich</a><ul><li><a href="#alternative-telefon-apps">Alternative Telefon Apps:</a></li><li><a href="#nützliche-android-apps">Nützliche Android Apps:</a></li></ul></li></ul>
+            </nav>
+          </aside>
+        
         <h1 id="eine-welt-ohne-google-ist-möglich">Eine Welt ohne Google ist möglich</h1>
 
 <p>Deine Privatsphäre ist wichtig. Im Zeitalter der Technologie ist es essenziell, darüber nachzudenken, wie deine Daten genutzt werden. Viele Google-Apps sammeln Daten und geben dir möglicherweise nicht die Kontrolle, die du möchtest. Google hat Zugriff auf eine Menge persönlicher Informationen über dich, wenn du ihre Dienste nutzt. Alternativ dazu bietet F-Droid eine Auswahl an Open-Source-Apps, die deine Privatsphäre respektieren und dir mehr Kontrolle über deine Daten geben.</p>
@@ -311,6 +316,17 @@
     </div>
 
     
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Suchbegriff eingeben..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
 
     <div id="footer" class="page__footer">
       <footer>
@@ -320,7 +336,7 @@
         <div class="page__footer-follow">
   <ul class="social-icons">
     
-      <li><strong>Follow:</strong></li>
+      <li><strong>Folgen:</strong></li>
     
 
     
@@ -345,7 +361,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2024 <a href="">Futureshit.</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2024 <a href="">Futureshit.</a>. Möglich durch <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
@@ -355,6 +371,10 @@
 
 
 
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
 
 
 
